@@ -1,0 +1,88 @@
+/*
+    ALINHAMENTO, ESPAÇAMENTOS
+    LARGURAS E ALTURAS
+*/
+html, body{
+    margin: 0
+}
+ 
+body{
+    display: flex;
+    /* Trabalha com linhas ou colunas 
+        padrão: linha
+
+        aplicamos o flex para fazer css tricks no rodapé
+    */
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* ========= TITULOS ========= */
+
+header h1, main h2 {
+    margin-bottom: 70px;
+}
+
+.form h2 {
+    text-align: right ;
+}
+/* ========= ESTRUTURAS =======*/
+
+header, main, footer{
+    /*alinhamentos de textos*/
+    text-align: center;
+}
+
+
+header, .form, main {
+    margin: 0 auto 70px;
+    /*espaçamentos com margin*/
+    max-width: 500px;
+}
+
+/* ======= HEADER ========*/
+
+header button {
+    padding: 8px 16px;
+}
+
+/*
+    pode ser:
+        section.form ou 
+        .form
+    
+   ° O section.form tem mais foça que o .form 
+*/
+
+/* ======= FORM =======*/
+
+form input, form button {
+    width: 100%;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    /*serve para o meu paddin não interferir na largura final do componente. É para a correção de uma propriedade padrão*/
+    padding: 8px 16px;
+    /*bordas */
+    border-radius: 4px;
+    border: 1px red solid  ;
+}
+section.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px ;
+    
+}
+
+/* ====== MAIN =====*/
+main .donors{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+footer{
+    margin-top: auto;
+    padding: 16px;
+    border: 1px solid #eee;
+}
