@@ -2,6 +2,13 @@
     ALINHAMENTO, ESPAÇAMENTOS
     LARGURAS E ALTURAS
 */
+*{
+    box-sizing: border-box;
+}
+:root{
+    --background-main: #f9f9f9;
+    --background-elements:#ff4f4f
+}
 html, body{
     margin: 0
 }
@@ -15,7 +22,14 @@ body{
     */
     flex-direction: column;
     height: 100vh;
+    background-color: var(--background-color-main)
+
 }
+
+h1, h2{
+    color: #000000cc;
+}
+
 
 /* ========= TITULOS ========= */
 
@@ -24,7 +38,9 @@ header h1, main h2 {
 }
 
 .form h2 {
-    text-align: right ;
+    text-align: right;
+    color: #ffffffdd;
+    font-size: 18px;
 }
 /* ========= ESTRUTURAS =======*/
 
@@ -43,7 +59,13 @@ header, .form, main {
 /* ======= HEADER ========*/
 
 header button {
+    margin-top: 16px;
     padding: 8px 16px;
+    background-color: var(--background-elements);
+    border: none;
+    
+    color: white;
+    font-weight: bold;
 }
 
 /*
@@ -54,8 +76,23 @@ header button {
    ° O section.form tem mais foça que o .form 
 */
 
+.logo{
+    width: 120px;
+    margin: 70px 0;
+}
 /* ======= FORM =======*/
 
+section.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center; /*Propriedade do grid para alinhar os elementos ao meio*/
+    background-color: var(--background-elements);
+
+    padding: 16px 64px;
+    border-radius: 6px;
+    
+}
 form input, form button {
     width: 100%;
     margin-bottom: 4px;
@@ -64,16 +101,24 @@ form input, form button {
     padding: 8px 16px;
     /*bordas */
     border-radius: 4px;
-    border: 1px red solid  ;
+    border: 1px #ffffff88 solid;
 }
-section.form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 45px ;
-    
+.form input{
+    background-color: transparent;
+}
+
+.form input::placeholder{
+    color: #ffffffaa
+}
+.form button {
+    font-weight: bold;
 }
 
 /* ====== MAIN =====*/
+main h2 span{
+    color: #ff4f4f;
+}
+
 main .donors{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
