@@ -1,79 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doe sangue!. Doe vida!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Doe Sangue Doe Vida</title>
 </head>
 
 <body>
-    <header>
 
-        <img class="logo" src="img/logo.png" alt="Imagem de DOE">
-        <h2>A sua doação importa</h2>
-        <p>Até 3 vidas com q doação</p>
-        <p>Mais de 38.000 doações são necessárias todos os dias</p>
+    <header>
+        <img src="img/logo.png" alt="logoDOE" class="logo">
+        <h2>A sua Doação Importa</h2>
+        <p>Até 3 vidas com 1 doação</p>
+        <p>Mais de 38.000 doações são necessarias todos os dias</p>
         <p>Apenas 1,9% da população brasileira, doa sangue</p>
 
-        <button>Quero ajudar</button>
+        <button>Quero Ajudar</button>
     </header>
 
-    <section class="form">
+    <section class="form hiden"> <!-- seção p/ o formulario-->
         <h2>Entre na lista de doadores</h2>
         <form action="/">
-            <!--Nome-->
-            <input
-                type="text"
-                name="name"
-                placeholder="Nome completo"
-            >
-            <!--Email-->
-            <input
-                type="text"
-                name="name"
-                placeholder="Email"
-            >
-            <!--Tipo Sanguíneo-->
-            <input
-                type="text"
-                name="name"
-                placeholder="Tipo sanguineo"
-            >
-            <button>Quero Ajudar</button>
+        <input 
+            type="text"
+            name="name"
+            placeholder="Nome Completo"
+         >
+         <input 
+            type="email"
+            name="email"
+            placeholder="email"
+         >
+         <input 
+            type="text"
+            name="blood"
+            placeholder="Tipo sanguineo"
+         >
+         <button>Quero ajudar</button>
         </form>
-    </section>
-
+    </section>  <!-- fim da seção p/ o formulario-->
     <main>
-        <h2>Últimos <span>doadores </span></h2>
-
+        <h2>Ultimos <span>Doadores</span></h2>
         <section class="donors">
-            <!-- DOADOR 1-->
             <div class="donor">
                 <div class="blood">AB+</div>
                 <p>Diego Fernandes</p>
             </div>
-            <!-- DOADOR 2-->
-            <div class="donor">
-                <div class="blood">A+</div>
-                <p>Cleiton Souza</p>
-            </div>
-            <!-- DOADOR 3-->
             <div class="donor">
                 <div class="blood">B+</div>
+                <p>Cleiton Souza</p>
+            </div>
+            <div class="donor">
+                <div class="blood">A+</div>
                 <p>Robson Marques</p>
             </div>
-            <!-- DOADOR 4-->
             <div class="donor">
                 <div class="blood">O+</div>
                 <p>Maik Brito</p>
             </div>
-
         </section>
-
     </main>
-    <footer>Com ❤ Jonas Bezerra</footer>
+    <footer>&copy Com 💖 Jonas Bezerra</footer>
+    <script src="js/scripts.js"></script>
 
 </body>
 
