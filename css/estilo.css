@@ -9,12 +9,13 @@ ALINHAMENTOS, ESPAÇAMENTOS, LARGURAS E ALTURAS
  html, body{
      margin: 0px;
  }
+
 body{
     display: flex ;
     flex-direction: column;
 
     font-family: 'Montserrat alternates','Arial';
-    height: 100vh;/*pega toda altura*/
+    height: 100vh; /*pega toda altura*/
 }
 
 
@@ -124,7 +125,7 @@ header, section.form, main{
 
     /*limiter dos elementos na página. como eu limito? com largura e altura*/
 
-    width: 90%;/*a largura pode ser em % ou em px*/
+    
     max-width: 500px ;/*limite de largura*/
 
     /* esse é um alinhamento p/ caixinhas ex: section, main, header*/
